@@ -8,7 +8,10 @@ class Pessoa:
     print(f'Nome: {self.nome}')
 
 
-  def set_cpf(self):
+  def get_cpf(self):
     return self.__cpf
+  
+  def getEndereco(self):
+    return self._endereco
   
 
