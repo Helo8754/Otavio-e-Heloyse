@@ -2,12 +2,13 @@ class Pessoa:
   def __init__(self, nomep, cpfp, enderecop):
     self.nome = nomep
     self.__cpf = cpfp
-    self.__endereco = enderecop
+    self._endereco = enderecop
 
-  def getAtributos(self):
-    print('> Nome: {}\n> CPF>: {}\n> endereço:{}'.format(self.__nome, self.__cpf, self.__endereco))
+  def getNome(self):
+    print(f'Nome: {self.nome}')
 
 
-  def Falar(self):
-    print('olá!')
+  def set_cpf(self):
+    return self.__cpf
+  
 
